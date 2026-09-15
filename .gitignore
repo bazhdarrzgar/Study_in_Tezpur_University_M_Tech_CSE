@@ -1,0 +1,24 @@
+# Sensitive Credentials & Setup Files (DO NOT UPLOAD)
+github_information.md
+*token*
+*.pat
+
+# Compiled Object Files and Executables
+*.o
+*.obj
+*.out
+*.exe
+*.bin
+CSMCS26A017_Lab2_1
+CSMCS26A017_Lab2_2
+
+# Simulation Output Files
+out.tr
+out.nam
+
+# System and Editor files
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/

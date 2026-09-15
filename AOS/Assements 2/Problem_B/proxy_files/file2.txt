@@ -1,0 +1,7 @@
+========================================
+Proxy Copy of: file2.txt
+Storage Location: Problem_B/proxy_files/file2.txt
+========================================
+This is the designated proxy copy of file2.txt.
+The multithreaded proxy server serves this file
+concurrently to requesting clients using POSIX threads.

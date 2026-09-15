@@ -1,0 +1,8 @@
+========================================
+Proxy Copy of: file1.txt
+Storage Location: Problem_B/proxy_files/file1.txt
+========================================
+This is the designated proxy copy of file1.txt.
+It is stored directly on the multithreaded proxy server
+to provide fast, low-latency access to clients without
+needing to query the backend origin server.

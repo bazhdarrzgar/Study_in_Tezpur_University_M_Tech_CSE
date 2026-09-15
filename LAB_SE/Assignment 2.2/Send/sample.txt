@@ -1,0 +1,5 @@
+Huffman coding is an algorithm for lossless data compression. The algorithm was developed by David A. Huffman while he was a Ph.D. student at MIT, and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
+
+The technique works by creating a binary tree of nodes. These can be stored in a regular array, the size of which depends on the number of symbols, n. A node can be either a leaf node or an internal node. Initially, all nodes are leaf nodes, which contain the symbol itself, the weight (frequency of appearance) of the symbol and optionally, a link to a parent node which makes it easy to read the code (in reverse) starting from a leaf node.
+
+Greedy algorithms make the optimal choice at each local stage with the intent of finding a global optimum. Huffman coding is a classic example of a greedy algorithm that yields an optimal prefix code.

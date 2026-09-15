@@ -1,0 +1,1 @@
+[Chapter%201.md](file;file:///home/swyanswartz/Music/STUDY/MFCS/Chapter%201.md)[Chapter%202.md](file;file:///home/swyanswartz/Music/STUDY/MFCS/Chapter%202.md)[Chapter%203.md](file;file:///home/swyanswartz/Music/STUDY/MFCS/Chapter%203.md) please for bolding the text and make formating of the header .. and other think fix it in this three markdown file
