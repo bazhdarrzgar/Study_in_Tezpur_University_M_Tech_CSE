@@ -1,4 +1,4 @@
-# ⚡ 5-Minute Morning Cram Sheet: Chapters 1 & 2
+# ⚡ 5-Minute Morning Cram Sheet: Chapters 1, 2 & 3
 > **Quick Memorization Card for Exam Morning**  
 > *Read this right before your exam or right when you wake up. Everything here is pure high-yield testable material.*
 
@@ -16,6 +16,8 @@
 | **Left Nullspace** | $N(A^T)$ | $\mathbb{R}^m$ | $\mathbf{m - r}$ | All solutions to $A^T y = \mathbf{0}$ |
 | **Free Variables** | - | - | $\mathbf{n - r}$ | Columns without pivots |
 | **Rank-Nullity** | - | - | $r + (n - r) = n$ | $\dim C(A) + \dim N(A) = \text{number of columns}$ |
+| **Orthogonal Complements** | $C(A^T) \perp N(A)$ | $\mathbb{R}^n$ | $r + (n - r) = n$ | Row Space $\perp$ Nullspace |
+| **Left Complements** | $C(A) \perp N(A^T)$ | $\mathbb{R}^m$ | $r + (m - r) = m$ | Column Space $\perp$ Left Nullspace |
 
 ---
 
@@ -95,8 +97,38 @@ $$x = x_{\text{particular}} + x_{\text{nullspace}} = x_p + c_1 s_1 + c_2 s_2 + \
 
 ---
 
-## 🎯 3 One-Line Golden Rules for the Exam
+## 🧠 CHAPTER 3: Core Essentials to Memorize
+
+### 1. Orthogonality Condition & Subspace Complements
+- $x \perp y \iff \mathbf{x^T y = 0}$.
+- Fundamental Orthogonality: $\mathbf{C(A^T) \perp N(A)}$ (in $\mathbb{R}^n$) and $\mathbf{C(A) \perp N(A^T)}$ (in $\mathbb{R}^m$).
+
+### 2. Projections & Projection Matrices
+- **Line projection:** $p = a \frac{a^Tb}{a^Ta}$, with projection matrix $\mathbf{P = \frac{aa^T}{a^Ta}}$.
+- **General projection onto $C(A)$:** $\mathbf{P = A(A^TA)^{-1}A^T}$ and $p = Pb$.
+- **Two Invariant Properties of ANY $P$:**
+  1. $\mathbf{P^T = P}$ (Symmetric)
+  2. $\mathbf{P^2 = P}$ (Idempotent)
+
+### 3. Least Squares & The Normal Equations
+- When $Ax = b$ is unsolvable ($b \notin C(A)$): minimize $\|Ax - b\|^2$.
+- Solve the **Normal Equations:**
+  $$\mathbf{A^T A \hat{x} = A^T b} \implies \hat{x} = (A^T A)^{-1} A^T b$$
+- Projection: $p = A\hat{x}$; Error: $e = b - p \in N(A^T)$ (strictly $A^Te = \mathbf{0}$).
+
+### 4. Orthonormal Matrices ($Q$) & Gram-Schmidt
+- $Q^TQ = I$. If $Q$ is square: $\mathbf{Q^{-1} = Q^T}$.
+- Projection matrix with orthonormal columns: $\mathbf{P = QQ^T}$.
+- **Gram-Schmidt:** Subtract parallel projections onto earlier directions, then divide by length:
+  $$A = a, \quad B = b - \frac{A^Tb}{A^TA}A, \quad C = c - \frac{A^Tc}{A^TA}A - \frac{B^Tc}{B^TB}B \implies q_i = \frac{V_i}{\|V_i\|}$$
+
+---
+
+## 🎯 5 One-Line Golden Rules for the Exam
 
 1. **Rank = Pivots = $\dim C(A) = \dim C(A^T)$.**
 2. **Free Variables = $n - r = \dim N(A)$.**
 3. **$\dim(\text{Column Space}) + \dim(\text{Nullspace}) = n$ (Total Columns).**
+4. **$C(A^T) \perp N(A)$ and $C(A) \perp N(A^T)$ (Orthogonal Complements).**
+5. **Least-squares always solves $A^TA\hat{x} = A^Tb$ with perpendicular error $A^Te = \mathbf{0}$.**
+
